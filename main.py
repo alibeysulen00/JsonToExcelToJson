@@ -15,7 +15,7 @@ df = pd.read_json(json1, 1, 1) # Pandas kütüphanesinden bir seri oluşturulur
 data_frame = pd.DataFrame(df) # Excele yazdırmak için seri dataframe e dönüştürülür
 loop += 1
 
-while loop < 3:                 #  dosya içindeki json sayısı kadar döner
+while loop < file.length()-1:                 #  dosya içindeki json sayısı kadar döner
     json2 = array.split(",")[loop]   #Virgüle kadarki dosya adı okunur ve b değişkenine atılır
     df1 = pd.read_json(json2, 1, 0) # Yeni bir seri oluşturulur , oluşturlan bu seri döngü boyunca değişecektir
 
